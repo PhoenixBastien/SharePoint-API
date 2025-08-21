@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pandas as pd
 from bigtree import Node, dataframe_to_tree
-from office365.sharepoint.client_context import ClientContext, ClientCredential
+from office365.sharepoint.client_context import ClientContext
 from office365.sharepoint.folders.folder import Folder
 
-from config import client_id, client_secret, site_url
+from config import TEAM_SITE_URL, client_credentials
 
 
 def read_file(path: Path) -> pd.DataFrame:
@@ -17,6 +17,7 @@ def read_file(path: Path) -> pd.DataFrame:
         df = df.dropna(how='all', ignore_index=True)
         df.columns = df.iloc[0]
         df = df[1:].reset_index(drop=True).rename_axis(None, axis=1)
+
 
 def create_folders(
     ctx: ClientContext,
@@ -41,6 +42,7 @@ def create_folders(
     for i, child in enumerate(node.children):
         is_last = i == child_count - 1
         create_folders(ctx, child, folder, prefix, is_last)
+
 
 def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
     df_filled = df.copy()
@@ -69,9 +71,9 @@ def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
 
     return df_filled.fillna('')
 
-# get client context with client credentials
-client_credentials = ClientCredential(client_id, client_secret)
-ctx = ClientContext(site_url).with_credentials(client_credentials)
+
+# get client context with site url and client credentials
+ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
 
 # read csv or excel file
 path = Path('test/folder_structure.csv')

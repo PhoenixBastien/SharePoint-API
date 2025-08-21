@@ -1,12 +1,12 @@
-from office365.sharepoint.client_context import ClientContext, ClientCredential
+from office365.sharepoint.client_context import ClientContext
 
-from config import client_id, client_secret, site_url
+from config import TEAM_SITE_URL, client_credentials
 
-client_credentials = ClientCredential(client_id, client_secret)
-ctx = ClientContext(site_url).with_credentials(client_credentials)
+# get client context with site url and client credentials
+ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
 
 root_folder = ctx.web.default_document_library().root_folder
-url_list = [
+links = [
     'learn.microsoft.com',
     'www.youtube.com',
     'www.google.com',
@@ -15,7 +15,8 @@ url_list = [
     'de.wikipedia.org'
 ]
 
-for url in url_list:
-    file_name = f'{url}.url'
-    content = f'[InternetShortcut]\nURL=http://{url}'.encode('utf-8')
-    root_folder.upload_file(file_name, content).execute_query()
+for link in links:
+    root_folder.upload_file(
+        file_name=f'{link}.url',
+        content=f'[InternetShortcut]\nURL=https://{link}'.encode('utf-8')
+    ).execute_query()
