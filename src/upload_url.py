@@ -1,9 +1,9 @@
 from office365.sharepoint.client_context import ClientContext
 
-from config import TEAM_SITE_URL, client_credentials
+from config import TEST_SITE_URL, client_credentials
 
 # get client context with site url and client credentials
-ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
+ctx = ClientContext(TEST_SITE_URL).with_credentials(client_credentials)
 
 root_folder = ctx.web.default_document_library().root_folder
 links = [
