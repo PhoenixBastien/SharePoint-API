@@ -6,10 +6,10 @@ from office365.sharepoint.sitedesigns.creation_info import \
     SiteDesignCreationInfo
 from office365.sharepoint.sitescripts.utility import SiteScriptUtility
 
-from config import EMAIL, TEAM_SITE_URL, client_credentials
+from config import EMAIL, TEST_SITE_URL, client_credentials
 
 # get client context with site url and client credentials
-ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
+ctx = ClientContext(TEST_SITE_URL).with_credentials(client_credentials)
 
 # get and delete existing site scripts
 result = SiteScriptUtility.get_site_scripts(ctx).execute_query()
@@ -57,6 +57,6 @@ print(f'Site design created with ID {design_id}')
 
 # add site design task
 result = SiteScriptUtility.add_site_design_task(
-    ctx, TEAM_SITE_URL, design_id
+    ctx, TEST_SITE_URL, design_id
 ).execute_query()
 pprint(result.value.to_json())
