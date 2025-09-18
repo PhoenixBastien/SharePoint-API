@@ -5,10 +5,10 @@ from office365.sharepoint.contenttypes.content_type import ContentType
 from office365.sharepoint.fields.choice import FieldChoice
 from office365.sharepoint.fields.collection import FieldCollection
 
-from config import TENANT_URL, client_credentials
+from config import ROOT_SITE_URL, client_credentials
 
 # get client context with site url and client credentials
-CONTENT_TYPE_HUB_URL = f'{TENANT_URL}/sites/ContentTypeHub'
+CONTENT_TYPE_HUB_URL = f'{ROOT_SITE_URL}/sites/ContentTypeHub'
 ctx = ClientContext(CONTENT_TYPE_HUB_URL).with_credentials(client_credentials)
 
 with (
