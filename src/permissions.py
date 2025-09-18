@@ -3,10 +3,10 @@ from office365.sharepoint.permissions.base_permissions import BasePermissions
 from office365.sharepoint.permissions.kind import PermissionKind
 from office365.sharepoint.principal.users.collection import UserCollection
 
-from config import EMAIL, TEAM_SITE_URL, client_credentials
+from config import EMAIL, SITE_URL, client_credentials
 
 # get client context with site url and client credentials
-ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
+ctx = ClientContext(SITE_URL).with_credentials(client_credentials)
 
 # check if new group name already exists
 group_name = 'Alert Manager Group'
@@ -54,7 +54,7 @@ print(f'{folder} found')
 
 # ensure user is a member of site by login name and add if not
 user = ctx.web.ensure_user(f'i:0#.f|membership|{EMAIL}').execute_query()
-print(f'{user} is a member of {TEAM_SITE_URL}')
+print(f'{user} is a member of {SITE_URL}')
 
 # add user to group
 assert isinstance(group.users, UserCollection)
