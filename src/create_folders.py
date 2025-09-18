@@ -5,7 +5,7 @@ from bigtree import Node, dataframe_to_tree
 from office365.sharepoint.client_context import ClientContext
 from office365.sharepoint.folders.folder import Folder
 
-from config import TEAM_SITE_URL, client_credentials
+from config import TEST_SITE_URL, client_credentials
 
 
 def read_file(path: Path) -> pd.DataFrame:
@@ -73,7 +73,7 @@ def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # get client context with site url and client credentials
-ctx = ClientContext(TEAM_SITE_URL).with_credentials(client_credentials)
+ctx = ClientContext(TEST_SITE_URL).with_credentials(client_credentials)
 
 # read csv or excel file
 path = Path('test/folder_structure.csv')
