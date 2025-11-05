@@ -1,0 +1,549 @@
+Name,Description,Category,Parent,Content Type ID,Column Name,Column Type,Column Required
+Announcement,"Create a new news item, status or other short piece of information.",List Content Types,Item,0x0104,Body,Multiple lines of text,False
+,,,,,Expires,Date and Time,False
+,,,,,Title,Single line of text,True
+Audio,Upload an audio file.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B006973ACD696DC4858A76371B2FB2F439A,Author,Single line of text,False
+,,,,,Comments,Multiple lines of text,False
+,,,,,Copyright,Single line of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Length (seconds),Integer,False
+,,,,,Name,File,True
+,,,,,Picture Width,Integer,False
+,,,,,Preview Image URL,Hyperlink or Picture,False
+,,,,,Title,Single line of text,False
+Basic Page,Create a new basic page.,Document Content Types,Document,0x010109,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+Category,(Category Content Type Description),Community Content Types,Item,0x010019ACC57FBA4146AFA4C822E719824BED,Category Picture,Hyperlink or Picture,False
+,,,,,Description,Single line of text,False
+,,,,,Discussions,Integer,False
+,,,,,Last Post By,Person or Group,False
+,,,,,Last Post Date,Date and Time,False
+,,,,,Replies,Integer,False
+,,,,,Title,Single line of text,True
+Circulation,Add a new Circulation.,Group Work Content Types,Item,0x01000F389E14C9CE4CE486270B9D4713A5D6,Allow Editing,Yes/No,False
+,,,,,Append-Only Comments,Multiple lines of text,False
+,,,,,Body,Multiple lines of text,False
+,,,,,Confidential,Yes/No,False
+,,,,,Confirmations,Single line of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Notification,Yes/No,False
+,,,,,Recipients,Person or Group,True
+,,,,,Title,Single line of text,True
+Comment,Create a new blog comment.,List Content Types,Item,0x0111,Body,Multiple lines of text,False
+,,,,,Title,Single line of text,False
+Community Member,Add a new community member,Community Content Types,Site Membership,0x010027FC2137D8DE4B00A40E14346D070D5201,Best Replies,Number,False
+,,,,,Discussions,Number,False
+,,,,,Last Activity,Date and Time,False
+,,,,,Member,Person or Group,True
+,,,,,Member Status,Integer,False
+,,,,,Replies,Number,False
+,,,,,Replies to reach next level,Number,False
+,,,,,Reputation Score,Number,False
+,,,,,Status,Choice,False
+Contact,Store information about a business or personal contact.,List Content Types,Item,0x0106,Address,Multiple lines of text,False
+,,,,,Business Phone,Single line of text,False
+,,,,,City,Single line of text,False
+,,,,,Comments,Multiple lines of text,False
+,,,,,Company,Single line of text,False
+,,,,,Country/Region,Single line of text,False
+,,,,,E-Mail,Single line of text,False
+,,,,,Fax Number,Single line of text,False
+,,,,,First Name,Single line of text,False
+,,,,,Full Name,Single line of text,False
+,,,,,Home Phone,Single line of text,False
+,,,,,Job Title,Single line of text,False
+,,,,,Last Name,Single line of text,True
+,,,,,Mobile Number,Single line of text,False
+,,,,,State/Province,Single line of text,False
+,,,,,Web Page,Hyperlink or Picture,False
+,,,,,ZIP/Postal Code,Single line of text,False
+Content Freshness,Used to create a dynamic page related to contentfreshness.,Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C411800C57E7DC123744954AACC08D1D5260154,Author Byline,Person or Group,False
+,,,,,Authoring Canvas Content,Publishing HTML,False
+,,,,,Banner Image URL,Hyperlink or Picture,False
+,,,,,Call To Action,Multiple lines of text,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,First Published Date,Date and Time,False
+,,,,,Name,File,True
+,,,,,Page Layout Content,Publishing HTML,False
+,,,,,Promoted State,Number,False
+,,,,,Site Page Flags,Choice,False
+,,,,,Title,Single line of text,False
+,,,,,Topic header,Single line of text,False
+Discussion,Create a new discussion topic.,Folder Content Types,Folder,0x012002,Best Response Id,Integer,False
+,,,,,Body,Multiple lines of text,False
+,,,,,E-Mail Sender,Multiple lines of text,False
+,,,,,Folder Child Count,Lookup,False
+,,,,,Is Featured Discussion,Yes/No,False
+,,,,,Last Reply By,Person or Group,False
+,,,,,Last Updated,Date and Time,False
+,,,,,Modified By,Person or Group,False
+,,,,,Question,Yes/No,False
+,,,,,Replies,Lookup,False
+,,,,,Title,Single line of text,True
+,,,,,Version,Single line of text,False
+Document,Create a new document.,Document Content Types,Item,0x0101,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+Document Set,Create a document set when you want to manage multiple documents as a single work product.,Document Set Content Types,Document Collection Folder,0x0120D520,Description,Multiple lines of text,False
+,,,,,Folder Child Count,Lookup,False
+,,,,,Item Child Count,Lookup,False
+,,,,,Name,File,True
+Dublin Core Columns,The Dublin Core metadata element set.,Document Content Types,Document,0x01010B,Contributor,Multiple lines of text,False
+,,,,,Coverage,Single line of text,False
+,,,,,Creator,Single line of text,False
+,,,,,Date Created,Date and Time,False
+,,,,,Date Modified,Date and Time,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Format,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Language,Choice,False
+,,,,,Name,File,True
+,,,,,Publisher,Single line of text,False
+,,,,,Relation,Multiple lines of text,False
+,,,,,Resource Identifier,Single line of text,False
+,,,,,Resource Type,Single line of text,False
+,,,,,Rights Management,Multiple lines of text,False
+,,,,,Source,Multiple lines of text,False
+,,,,,Subject,Single line of text,False
+,,,,,Title,Single line of text,True
+East Asia Contact,Store information about a business or personal contact.,List Content Types,Item,0x0116,Address,Multiple lines of text,False
+,,,,,Business Phone,Single line of text,False
+,,,,,City,Single line of text,False
+,,,,,Comments,Multiple lines of text,False
+,,,,,Company,Single line of text,False
+,,,,,Country/Region,Single line of text,False
+,,,,,E-Mail,Single line of text,False
+,,,,,Fax Number,Single line of text,False
+,,,,,First Name,Single line of text,False
+,,,,,Full Name,Single line of text,False
+,,,,,Home Phone,Single line of text,False
+,,,,,Job Title,Single line of text,False
+,,,,,Last Name,Single line of text,True
+,,,,,Mobile Number,Single line of text,False
+,,,,,State/Province,Single line of text,False
+,,,,,Web Page,Hyperlink or Picture,False
+,,,,,ZIP/Postal Code,Single line of text,False
+Event,"Create a new meeting, deadline or other event.",List Content Types,Item,0x0102,All Day Event,All Day Event,False
+,,,,,Category,Choice,False
+,,,,,Description,Multiple lines of text,False
+,,,,,End Time,Date and Time,True
+,,,,,Location,Single line of text,False
+,,,,,Recurrence,Recurrence,False
+,,,,,Start Time,Date and Time,True
+,,,,,Title,Single line of text,True
+,,,,,Workspace,Cross Project Link,False
+Excel based Status Indicator,Create a new Status Indicator using data from Excel Services,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088403,Auto Update,Yes/No,False
+,,,,,Data Source,Hyperlink or Picture,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Detail Link,Hyperlink or Picture,False
+,,,,,Formatted indicator goal,Single line of text,False
+,,,,,Formatted indicator value,Single line of text,False
+,,,,,Formatted indicator warning,Single line of text,False
+,,,,,Goal Cell,Single line of text,False
+,,,,,Goal from workbook,Yes/No,False
+,,,,,Goal Sheet,Single line of text,False
+,,,,,Indicator Comments,Multiple lines of text,False
+,,,,,Indicator Goal Threshold,Number,False
+,,,,,Indicator Value,Number,False
+,,,,,Indicator Warning Threshold,Number,False
+,,,,,Lower values are better,Yes/No,False
+,,,,,Most recent indicator data update,Date and Time,False
+,,,,,Update Error,Multiple lines of text,False
+,,,,,Value Cell,Single line of text,False
+,,,,,Value Sheet,Single line of text,False
+,,,,,Warning Cell,Single line of text,False
+,,,,,Warning from workbook,Yes/No,False
+,,,,,Warning Sheet,Single line of text,False
+Fixed Value based Status Indicator,Create a new Status Indicator using manually entered information,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088401,Description,Multiple lines of text,False
+,,,,,Detail Link,Hyperlink or Picture,False
+,,,,,Formatted indicator goal,Single line of text,False
+,,,,,Formatted indicator value,Single line of text,False
+,,,,,Formatted indicator warning,Single line of text,False
+,,,,,Indicator Comments,Multiple lines of text,False
+,,,,,Indicator Goal Threshold,Number,False
+,,,,,Indicator Value,Number,False
+,,,,,Indicator Warning Threshold,Number,False
+,,,,,Lower values are better,Yes/No,False
+,,,,,Most recent indicator data update,Date and Time,False
+,,,,,Update Error,Multiple lines of text,False
+Folder,Create a new folder.,Folder Content Types,Item,0x0120,Folder Child Count,Lookup,False
+,,,,,Item Child Count,Lookup,False
+,,,,,Name,File,True
+Form,Fill out this form.,Document Content Types,Document,0x010101,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+Holiday,Add a new holiday.,Group Work Content Types,Item,0x01009BE2AB5291BF4C1A986910BD278E4F18,Category,Choice,False
+,,,,,Date,Date and Time,False
+,,,,,Non-Working Day,Yes/No,False
+,,,,,Title,Single line of text,True
+IM new test,,Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C4118001B799C6261EF0149BB922B0ADDFDCDF5,Author Byline,Person or Group,False
+,,,,,Authoring Canvas Content,Publishing HTML,False
+,,,,,Banner Image URL,Hyperlink or Picture,False
+,,,,,Call To Action,Multiple lines of text,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,First Published Date,Date and Time,False
+,,,,,Name,File,True
+,,,,,Page Layout Content,Publishing HTML,False
+,,,,,Promoted State,Number,False
+,,,,,Site Page Flags,Choice,False
+,,,,,Title,Single line of text,False
+,,,,,Topic header,Single line of text,False
+Image,Upload an image.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214,Author,Single line of text,False
+,,,,,Comments,Multiple lines of text,False
+,,,,,Copyright,Single line of text,False
+,,,,,Date Picture Taken,Date and Time,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Name,File,True
+,,,,,Picture Height,Integer,False
+,,,,,Picture Width,Integer,False
+,,,,,Title,Single line of text,False
+IMDD Demo Test,,Document Content Types,Document,0x010100A1F6E228C0EC5B45B2E8CE690136953A,Active,Yes/No,False
+,,,,,Cost Center,Choice,False
+,,,,,Date Created,Date and Time,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Name,File,True
+,,,,,Revision,Single line of text,False
+,,,,,Status,Choice,False
+,,,,,Title,Single line of text,False
+Issue,Track an issue or problem.,List Content Types,Item,0x0103,Append-Only Comments,Multiple lines of text,False
+,,,,,Assigned To,Person or Group,False
+,,,,,Category,Choice,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Issue Status,Choice,False
+,,,,,Priority,Choice,False
+,,,,,Related Issues,Lookup,False
+,,,,,Title,Single line of text,True
+Item,Create a new list item.,List Content Types,System,0x01,Title,Single line of text,True
+JavaScript Display Template,Create a new custom CSR JavaScript Display Template.,Display Template Content Types,Document,0x0101002039C03B61C64EC4A04F5361F3851068,Comments,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Hidden,Yes/No,False
+,,,,,Icon,Hyperlink or Picture,False
+,,,,,Name,File,True
+,,,,,Standalone,Choice,True
+,,,,,Target Control Type,Choice,True
+,,,,,Target List Template ID,Single line of text,False
+,,,,,Target Scope,Single line of text,True
+,,,,,Title,Single line of text,True
+Link,Create a new link to a Web page or other resource.,List Content Types,Item,0x0105,Comments,Multiple lines of text,False
+,,,,,URL,Hyperlink or Picture,True
+Link to a Document,Create a link to a document in a different location.,Document Content Types,Document,0x01010A,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,URL,Hyperlink or Picture,True
+List View Style,Create a new List View Style,Document Content Types,Document,0x010100734778F2B7DF462491FC91844AE431CF,Category,Single line of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Icon URL,Hyperlink or Picture,False
+,,,,,Name,File,True
+,,,,,Required Fields,Single line of text,False
+,,,,,Target Web Part,Choice,False
+,,,,,Title,Single line of text,False
+,,,,,View Style ID,Single line of text,False
+Master Page,Create a new master page.,Document Content Types,Document,0x010105,Default CSS File,Single line of text,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+,,,,,UI Version,Choice,False
+Master Page Preview,Create a new master page preview.,Document Content Types,Document,0x010106,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+,,,,,UI Version,Choice,False
+Message,Create a new message.,List Content Types,Item,0x0107,Body,Multiple lines of text,False
+,,,,,E-Mail Sender,Multiple lines of text,False
+,,,,,Modified By,Person or Group,False
+,,,,,Parent Item Editor,Person or Group,False
+,,,,,Parent Item ID,Integer,False
+,,,,,Version,Single line of text,False
+New Word,Add a New Word to this list.,Group Work Content Types,Item,0x010018F21907ED4E401CB4F14422ABC65304,Comment 1,Single line of text,False
+,,,,,Comment 2,Single line of text,False
+,,,,,Comment 3,Single line of text,False
+,,,,,Display,Single line of text,True
+,,,,,POS,Choice,False
+,,,,,Title,Single line of text,True
+,,,,,URL,Hyperlink or Picture,False
+Official Notice,Add a new Official Notice.,Group Work Content Types,Item,0x01007CE30DD1206047728BAFD1C39A850120,Body,Multiple lines of text,False
+,,,,,Confidential,Yes/No,False
+,,,,,Confirmations,Single line of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Notification,Yes/No,False
+,,,,,Recipients,Person or Group,True
+,,,,,Title,Single line of text,True
+Phone Call Memo,Add a new Phone Call Memo.,Group Work Content Types,Item,0x0100807FBAC5EB8A4653B8D24775195B5463,Append-Only Comments,Multiple lines of text,False
+,,,,,Call Back,Yes/No,False
+,,,,,Callback Number,Single line of text,False
+,,,,,Confidential,Yes/No,False
+,,,,,Date/Time,Date and Time,True
+,,,,,Message,Multiple lines of text,False
+,,,,,Notification,Yes/No,False
+,,,,,Recipients,Call To,True
+,,,,,Resolved,Yes/No,False
+,,,,,Resolved By,Person or Group,False
+,,,,,Resolved Date,Date and Time,False
+,,,,,Title,Single line of text,True
+Picture,Upload an image or a photograph.,Document Content Types,Document,0x010102,Comments,Multiple lines of text,False
+,,,,,Date Picture Taken,Date and Time,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Name,File,True
+,,,,,Picture Height,Integer,False
+,,,,,Picture Width,Integer,False
+,,,,,Preview Image URL,Hyperlink or Picture,False
+,,,,,Title,Single line of text,True
+Post,Create a new blog post.,List Content Types,Item,0x0110,Body,Multiple lines of text,False
+,,,,,Category,Lookup,False
+,,,,,Published,Date and Time,True
+,,,,,Title,Single line of text,True
+Report,,Business Intelligence,Document,0x01010058DDEB47312E4967BFC1576B96E8C3D4,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Owner,Person or Group,False
+,,,,,Parent ID,Number,False
+,,,,,Report Category,Choice,False
+,,,,,Report Description,Multiple lines of text,False
+,,,,,Report Status,Choice,False
+,,,,,Title,Single line of text,False
+Repost Page,"Used to create a News link post. If deleted, the News link option will be disabled for users.",Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B,Author Byline,Person or Group,False
+,,,,,Authoring Canvas Content,Publishing HTML,False
+,,,,,Banner Image URL,Hyperlink or Picture,False
+,,,,,Call To Action,Multiple lines of text,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,First Published Date,Date and Time,False
+,,,,,Name,File,True
+,,,,,Original Source Item ID,Guid,False
+,,,,,Original Source List ID,Guid,False
+,,,,,Original Source Site ID,Guid,False
+,,,,,Original Source Url,Single line of text,False
+,,,,,Original Source Web ID,Guid,False
+,,,,,Page Layout Content,Publishing HTML,False
+,,,,,Promoted State,Number,False
+,,,,,Site Page Flags,Choice,False
+,,,,,Title,Single line of text,False
+,,,,,Topic header,Single line of text,False
+Reservations,Reserve resource.,List Content Types,Event,0x0102004F51EFDEA49C49668EF9C6744C8CF87D,All Day Event,All Day Event,False
+,,,,,Category,Choice,False
+,,,,,Check Double Booking,Check Double Booking,False
+,,,,,Description,Multiple lines of text,False
+,,,,,End Time,Date and Time,True
+,,,,,Free/Busy,Free/Busy,False
+,,,,,Location,Single line of text,False
+,,,,,Recurrence,Recurrence,False
+,,,,,Resources,Resources,True
+,,,,,Start Time,Date and Time,True
+,,,,,Title,Single line of text,True
+,,,,,Workspace,Cross Project Link,False
+Resource,Add a new resource.,Group Work Content Types,Item,0x01004C9F4486FBF54864A7B0A33D02AD19B1,Description,Multiple lines of text,False
+,,,,,Title,Single line of text,True
+Resource Group,Add a new resource group.,Group Work Content Types,Item,0x0100CA13F2F8D61541B180952DFB25E3E8E4,Description,Multiple lines of text,False
+,,,,,Resources,Resources,True
+,,,,,Title,Single line of text,True
+Rich Media Asset,Upload an asset.,Digital Asset Content Types,Document,0x0101009148F5A04DDD49CBA7127AADA5FB792B,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Name,File,True
+,,,,,Picture Width,Integer,False
+,,,,,Title,Single line of text,False
+Schedule,Create new appointment.,List Content Types,Event,0x0102007DBDC1392EAF4EBBBF99E41D8922B264,All Day Event,All Day Event,False
+,,,,,Category,Choice,False
+,,,,,Description,Multiple lines of text,False
+,,,,,End Time,Date and Time,True
+,,,,,Free/Busy,Free/Busy,False
+,,,,,Location,Single line of text,False
+,,,,,Participants,Person or Group,True
+,,,,,Recurrence,Recurrence,False
+,,,,,Start Time,Date and Time,True
+,,,,,Title,Single line of text,True
+,,,,,Workspace,Cross Project Link,False
+Schedule and Reservations,Create a new appointment and reserve a resource.,List Content Types,Event,0x01020072BB2A38F0DB49C3A96CF4FA85529956,All Day Event,All Day Event,False
+,,,,,Category,Choice,False
+,,,,,Check Double Booking,Check Double Booking,False
+,,,,,Description,Multiple lines of text,False
+,,,,,End Time,Date and Time,True
+,,,,,Free/Busy,Free/Busy,False
+,,,,,Location,Single line of text,False
+,,,,,Participants,Person or Group,True
+,,,,,Recurrence,Recurrence,False
+,,,,,Resources,Resources,False
+,,,,,Start Time,Date and Time,True
+,,,,,Title,Single line of text,True
+,,,,,Workspace,Cross Project Link,False
+SharePoint List based Status Indicator,Create a new Status Indicator using data from SharePoint Lists,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088402,Auto Update,Yes/No,False
+,,,,,Data Source,Hyperlink or Picture,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Detail Link,Hyperlink or Picture,False
+,,,,,Formatted indicator goal,Single line of text,False
+,,,,,Formatted indicator value,Single line of text,False
+,,,,,Formatted indicator warning,Single line of text,False
+,,,,,Indicator Comments,Multiple lines of text,False
+,,,,,Indicator Goal Threshold,Number,False
+,,,,,Indicator Value,Number,False
+,,,,,Indicator Warning Threshold,Number,False
+,,,,,Lower values are better,Yes/No,False
+,,,,,Most recent indicator data update,Date and Time,False
+,,,,,Percent Expression,Yes/No,False
+,,,,,Update Error,Multiple lines of text,False
+,,,,,Value Expression,Multiple lines of text,False
+,,,,,View Guid,Single line of text,False
+Site Membership,Add a new member,Community Content Types,Item,0x010027FC2137D8DE4B00A40E14346D070D52,Member,Person or Group,True
+,,,,,Member Status,Integer,False
+,,,,,Status,Choice,False
+Site Page,Create a new site page.,Document Content Types,Document,0x0101009D1CB255DA76424F860D91F20E6C4118,Author Byline,Person or Group,False
+,,,,,Authoring Canvas Content,Publishing HTML,False
+,,,,,Banner Image URL,Hyperlink or Picture,False
+,,,,,Call To Action,Multiple lines of text,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,First Published Date,Date and Time,False
+,,,,,Name,File,True
+,,,,,Page Layout Content,Publishing HTML,False
+,,,,,Promoted State,Number,False
+,,,,,Site Page Flags,Choice,False
+,,,,,Title,Single line of text,False
+,,,,,Topic header,Single line of text,False
+SQL Server Analysis Services based Status Indicator,Create a new Status Indicator using data from SQL Server Analysis Services,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088404,Auto Update,Yes/No,False
+,,,,,Data Source,Hyperlink or Picture,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Detail Link,Hyperlink or Picture,False
+,,,,,Display Folder,Single line of text,False
+,,,,,Formatted indicator goal,Single line of text,False
+,,,,,Formatted indicator value,Single line of text,False
+,,,,,Formatted indicator warning,Single line of text,False
+,,,,,Include child indicators,Yes/No,False
+,,,,,Indicator,Single line of text,False
+,,,,,Indicator Comments,Multiple lines of text,False
+,,,,,Indicator Goal Threshold,Number,False
+,,,,,Indicator Status,Number,False
+,,,,,Indicator Value,Number,False
+,,,,,Indicator Warning Threshold,Number,False
+,,,,,Lower values are better,Yes/No,False
+,,,,,Most recent indicator data update,Date and Time,False
+,,,,,Trend,Number,False
+,,,,,Update Error,Multiple lines of text,False
+Summary Task,Group and describe related tasks that you or your team needs to complete.,Folder Content Types,Folder,0x012004,% Complete,Number,False
+,,,,,Assigned To,Person or Group,False
+,,,,,Body,Multiple lines of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Folder Child Count,Lookup,False
+,,,,,Item Child Count,Lookup,False
+,,,,,Name,File,True
+,,,,,Predecessors,Lookup,False
+,,,,,Priority,Choice,False
+,,,,,Start Date,Date and Time,False
+,,,,,Task Status,Choice,False
+Task,Track a work item that you or your team needs to complete.,List Content Types,Item,0x0108,% Complete,Number,False
+,,,,,Assigned To,Person or Group,False
+,,,,,Body,Multiple lines of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Predecessors,Lookup,False
+,,,,,Priority,Choice,False
+,,,,,Related Items,Related Items,False
+,,,,,Start Date,Date and Time,False
+,,,,,Task Name,Single line of text,True
+,,,,,Task Status,Choice,False
+Timecard,Add a new timecard data.,Group Work Content Types,Item,0x0100C30DDA8EDB2E434EA22D793D9EE42058,Arrive Late,Single line of text,False
+,,,,,Break,Single line of text,False
+,,,,,Comments,Single line of text,False
+,,,,,Date,Date and Time,True
+,,,,,Day,Single line of text,False
+,,,,,End,Single line of text,False
+,,,,,Hours Worked,Single line of text,False
+,,,,,Late Night,Single line of text,False
+,,,,,Leaving Early,Single line of text,False
+,,,,,Out,Single line of text,False
+,,,,,Out of Office(Private),Single line of text,False
+,,,,,Overtime,Single line of text,False
+,,,,,Overtime on Holiday,Single line of text,False
+,,,,,Return,Single line of text,False
+,,,,,Start,Single line of text,False
+,,,,,Title,Single line of text,True
+,,,,,User Name,Person or Group,True
+,,,,,Vacation Length,Choice,False
+,,,,,Vacation Type,Choice,False
+Unknown Document Type,Allows users to upload documents of any content type to a library. Unknown documents will be treated as their original content type in client applications.,Special Content Types,Document,0x010104,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+Users,Add new users to this list.,Group Work Content Types,Item,0x0100FBEEE6F0C500489B99CDA6BB16C398F7,Account,Single line of text,True
+,,,,,Contact Information,Contact Information,False
+,,,,,Description,Multiple lines of text,False
+,,,,,Direct to Offsite,Yes/No,False
+,,,,,Home from Offsite,Yes/No,False
+,,,,,Location,Whereabouts,True
+,,,,,Time In,Date and Time,False
+,,,,,Time Out,Date and Time,False
+Video,Upload or link to a video.,Digital Asset Content Types,System Media Collection,0x0120D520A808,Description,Multiple lines of text,False
+,,,,,Frame Height,Integer,False
+,,,,,Frame Width,Integer,False
+,,,,,Length (seconds),Integer,False
+,,,,,Owner,Person or Group,False
+,,,,,People In Video,Person or Group,False
+,,,,,Preview Image URL,Hyperlink or Picture,False
+,,,,,Show Download Link,Yes/No,False
+,,,,,Show Embed Link,Yes/No,False
+Video Rendition,Upload a video file.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B00291D173ECE694D56B19D111489C4369D,Author,Single line of text,False
+,,,,,Bit Rate,Integer,False
+,,,,,Comments,Multiple lines of text,False
+,,,,,Copyright,Single line of text,False
+,,,,,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Frame Height,Integer,False
+,,,,,Frame Width,Integer,False
+,,,,,Keywords,Multiple lines of text,False
+,,,,,Label,Single line of text,False
+,,,,,Length (seconds),Integer,False
+,,,,,Name,File,True
+,,,,,Picture Width,Integer,False
+,,,,,Preview Image URL,Hyperlink or Picture,False
+,,,,,Title,Single line of text,False
+Web Part Page,Create a new Web Part page.,Document Content Types,Basic Page,0x01010901,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Title,Single line of text,False
+Web Part Page with Status List,Create a page that displays Status Indicators and Excel workbooks.,Business Intelligence,Document,0x010100A2E3C117A0C5482FAEE3D57C48CB042F,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Report Description,Multiple lines of text,False
+,,,,,Title,Single line of text,False
+What's New Notification,Add a new What's New notification.,Group Work Content Types,Item,0x0100A2CA87FF01B442AD93F37CD7DD0943EB,Assigned To,Person or Group,True
+,,,,,Content,Hyperlink or Picture,False
+,,,,,List Type,Choice,False
+,,,,,Mobile Content,Hyperlink or Picture,False
+,,,,,Title,Single line of text,True
+Wiki Page,Create a new wiki page.,Document Content Types,Document,0x010108,Document Created By,Single line of text,False
+,,,,,Document Modified By,Single line of text,False
+,,,,,Name,File,True
+,,,,,Wiki Content,Multiple lines of text,False
+Workflow Task (SharePoint 2013),Create a SharePoint 2013 Workflow Task,List Content Types,Task,0x0108003365C4474CAE8C42BCE396314E88E51F,% Complete,Number,False
+,,,,,Assigned To,Person or Group,False
+,,,,,Body,Multiple lines of text,False
+,,,,,Due Date,Date and Time,False
+,,,,,Predecessors,Lookup,False
+,,,,,Priority,Choice,False
+,,,,,Related Items,Related Items,False
+,,,,,Start Date,Date and Time,False
+,,,,,Task Name,Single line of text,True
+,,,,,Task Outcome,Outcome choice,False
+,,,,,Task Status,Choice,False

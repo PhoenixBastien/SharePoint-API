@@ -1,0 +1,62 @@
+Name,Description,Category,Parent,Content Type ID
+Announcement,"Create a new news item, status or other short piece of information.",List Content Types,Item,0x0104
+Audio,Upload an audio file.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B006973ACD696DC4858A76371B2FB2F439A
+Basic Page,Create a new basic page.,Document Content Types,Document,0x010109
+Category,(Category Content Type Description),Community Content Types,Item,0x010019ACC57FBA4146AFA4C822E719824BED
+Circulation,Add a new Circulation.,Group Work Content Types,Item,0x01000F389E14C9CE4CE486270B9D4713A5D6
+Comment,Create a new blog comment.,List Content Types,Item,0x0111
+Community Member,Add a new community member,Community Content Types,Site Membership,0x010027FC2137D8DE4B00A40E14346D070D5201
+Contact,Store information about a business or personal contact.,List Content Types,Item,0x0106
+Content Freshness,Used to create a dynamic page related to contentfreshness.,Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C411800C57E7DC123744954AACC08D1D5260154
+Discussion,Create a new discussion topic.,Folder Content Types,Folder,0x012002
+Document,Create a new document.,Document Content Types,Item,0x0101
+Document Set,Create a document set when you want to manage multiple documents as a single work product.,Document Set Content Types,Document Collection Folder,0x0120D520
+Dublin Core Columns,The Dublin Core metadata element set.,Document Content Types,Document,0x01010B
+East Asia Contact,Store information about a business or personal contact.,List Content Types,Item,0x0116
+Event,"Create a new meeting, deadline or other event.",List Content Types,Item,0x0102
+Excel based Status Indicator,Create a new Status Indicator using data from Excel Services,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088403
+Fixed Value based Status Indicator,Create a new Status Indicator using manually entered information,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088401
+Folder,Create a new folder.,Folder Content Types,Item,0x0120
+Form,Fill out this form.,Document Content Types,Document,0x010101
+Holiday,Add a new holiday.,Group Work Content Types,Item,0x01009BE2AB5291BF4C1A986910BD278E4F18
+IM new test,,Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C4118001B799C6261EF0149BB922B0ADDFDCDF5
+Image,Upload an image.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214
+IMDD Demo Test,,Document Content Types,Document,0x010100A1F6E228C0EC5B45B2E8CE690136953A
+Issue,Track an issue or problem.,List Content Types,Item,0x0103
+Item,Create a new list item.,List Content Types,System,0x01
+JavaScript Display Template,Create a new custom CSR JavaScript Display Template.,Display Template Content Types,Document,0x0101002039C03B61C64EC4A04F5361F3851068
+Link,Create a new link to a Web page or other resource.,List Content Types,Item,0x0105
+Link to a Document,Create a link to a document in a different location.,Document Content Types,Document,0x01010A
+List View Style,Create a new List View Style,Document Content Types,Document,0x010100734778F2B7DF462491FC91844AE431CF
+Master Page,Create a new master page.,Document Content Types,Document,0x010105
+Master Page Preview,Create a new master page preview.,Document Content Types,Document,0x010106
+Message,Create a new message.,List Content Types,Item,0x0107
+New Word,Add a New Word to this list.,Group Work Content Types,Item,0x010018F21907ED4E401CB4F14422ABC65304
+Official Notice,Add a new Official Notice.,Group Work Content Types,Item,0x01007CE30DD1206047728BAFD1C39A850120
+Phone Call Memo,Add a new Phone Call Memo.,Group Work Content Types,Item,0x0100807FBAC5EB8A4653B8D24775195B5463
+Picture,Upload an image or a photograph.,Document Content Types,Document,0x010102
+Post,Create a new blog post.,List Content Types,Item,0x0110
+Report,,Business Intelligence,Document,0x01010058DDEB47312E4967BFC1576B96E8C3D4
+Repost Page,"Used to create a News link post. If deleted, the News link option will be disabled for users.",Document Content Types,Site Page,0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B
+Reservations,Reserve resource.,List Content Types,Event,0x0102004F51EFDEA49C49668EF9C6744C8CF87D
+Resource,Add a new resource.,Group Work Content Types,Item,0x01004C9F4486FBF54864A7B0A33D02AD19B1
+Resource Group,Add a new resource group.,Group Work Content Types,Item,0x0100CA13F2F8D61541B180952DFB25E3E8E4
+Rich Media Asset,Upload an asset.,Digital Asset Content Types,Document,0x0101009148F5A04DDD49CBA7127AADA5FB792B
+Schedule,Create new appointment.,List Content Types,Event,0x0102007DBDC1392EAF4EBBBF99E41D8922B264
+Schedule and Reservations,Create a new appointment and reserve a resource.,List Content Types,Event,0x01020072BB2A38F0DB49C3A96CF4FA85529956
+SharePoint List based Status Indicator,Create a new Status Indicator using data from SharePoint Lists,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088402
+Site Membership,Add a new member,Community Content Types,Item,0x010027FC2137D8DE4B00A40E14346D070D52
+Site Page,Create a new site page.,Document Content Types,Document,0x0101009D1CB255DA76424F860D91F20E6C4118
+SQL Server Analysis Services based Status Indicator,Create a new Status Indicator using data from SQL Server Analysis Services,Business Intelligence,Common Indicator Columns,0x00A7470EADF4194E2E9ED1031B61DA088404
+Summary Task,Group and describe related tasks that you or your team needs to complete.,Folder Content Types,Folder,0x012004
+Task,Track a work item that you or your team needs to complete.,List Content Types,Item,0x0108
+Timecard,Add a new timecard data.,Group Work Content Types,Item,0x0100C30DDA8EDB2E434EA22D793D9EE42058
+Unknown Document Type,Allows users to upload documents of any content type to a library. Unknown documents will be treated as their original content type in client applications.,Special Content Types,Document,0x010104
+Users,Add new users to this list.,Group Work Content Types,Item,0x0100FBEEE6F0C500489B99CDA6BB16C398F7
+Video,Upload or link to a video.,Digital Asset Content Types,System Media Collection,0x0120D520A808
+Video Rendition,Upload a video file.,Digital Asset Content Types,Rich Media Asset,0x0101009148F5A04DDD49CBA7127AADA5FB792B00291D173ECE694D56B19D111489C4369D
+Web Part Page,Create a new Web Part page.,Document Content Types,Basic Page,0x01010901
+Web Part Page with Status List,Create a page that displays Status Indicators and Excel workbooks.,Business Intelligence,Document,0x010100A2E3C117A0C5482FAEE3D57C48CB042F
+What's New Notification,Add a new What's New notification.,Group Work Content Types,Item,0x0100A2CA87FF01B442AD93F37CD7DD0943EB
+Wiki Page,Create a new wiki page.,Document Content Types,Document,0x010108
+Workflow Task (SharePoint 2013),Create a SharePoint 2013 Workflow Task,List Content Types,Task,0x0108003365C4474CAE8C42BCE396314E88E51F
