@@ -10,11 +10,11 @@ from config import TEST_SITE_URL, client_credentials
 
 def read_file(path: Path) -> pd.DataFrame:
     # read csv or excel file
-    if path.suffix == '.csv':
+    if path.suffix == ".csv":
         df = pd.read_csv(path)
-    elif path.suffix == '.xlsx':
-        df = pd.read_excel(path, 'Mandate', usecols='B:J')
-        df = df.dropna(how='all', ignore_index=True)
+    elif path.suffix == ".xlsx":
+        df = pd.read_excel(path, "Mandate", usecols="B:J")
+        df = df.dropna(how="all", ignore_index=True)
         df.columns = df.iloc[0]
         df = df[1:].reset_index(drop=True).rename_axis(None, axis=1)
 
@@ -23,8 +23,8 @@ def create_folders(
     ctx: ClientContext,
     node: Node,
     parent_folder: Folder,
-    prefix: str = '',
-    is_last: bool = True
+    prefix: str = "",
+    is_last: bool = True,
 ) -> None:
     # create folder on SharePoint
     folder = parent_folder.add(node.name).execute_query()
@@ -33,9 +33,9 @@ def create_folders(
     if node.is_root:
         print(node.name)
     else:
-        connector = '└── ' if is_last else '├── '
-        print(f'{prefix}{connector}{node.name}')
-        prefix += '    ' if is_last else '│   '
+        connector = "└── " if is_last else "├── "
+        print(f"{prefix}{connector}{node.name}")
+        prefix += "    " if is_last else "│   "
 
     # iterate over children with index to identify last child
     child_count = len(node.children)
@@ -69,20 +69,20 @@ def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
 
             last_parent = parent
 
-    return df_filled.fillna('')
+    return df_filled.fillna("")
 
 
 # get client context with site url and client credentials
 ctx = ClientContext(TEST_SITE_URL).with_credentials(client_credentials)
 
 # read csv or excel file
-path = Path('test/folder_structure.csv')
+path = Path("test/folder_structure.csv")
 # path = Path('test/CIS - (NCSB-NSPD-PPP) - PASSENGER PROTECT PROGRAM.xlsx')
 df = read_file(path)
 
 # hierarchically fill df with full paths
 df = hierarchical_fill(df)
-paths = df.apply(lambda row: Path('/'.join(row)).as_posix(), axis=1)
+paths = df.apply(lambda row: Path("/".join(row)).as_posix(), axis=1)
 root = dataframe_to_tree(paths.to_frame())
 
 # get root folder and create folders
