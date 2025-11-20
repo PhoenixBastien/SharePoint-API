@@ -8,7 +8,7 @@ from office365.sharepoint.folders.folder import Folder
 from config import TEST_SITE_URL, client_credentials
 
 
-def read_file(path: Path) -> pd.DataFrame:
+def read_file(path: Path | str) -> pd.DataFrame:
     # read csv or excel file
     if path.suffix == ".csv":
         df = pd.read_csv(path)
