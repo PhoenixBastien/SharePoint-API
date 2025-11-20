@@ -14,7 +14,7 @@ def read_file(path: Path | str) -> pd.DataFrame:
         df = pd.read_csv(path)
     elif path.suffix == ".xlsx":
         df = (
-            pd.read_excel(path, "Mandate", usecols="B:J", header=2)
+            pd.read_excel(path, "Mandate", header=2, usecols="B:J")
             .dropna(how="all")
             .dropna(axis=1, how="all")
             .reset_index(drop=True)
