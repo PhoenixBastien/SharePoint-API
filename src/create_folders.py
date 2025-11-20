@@ -13,10 +13,14 @@ def read_file(path: Path) -> pd.DataFrame:
     if path.suffix == ".csv":
         df = pd.read_csv(path)
     elif path.suffix == ".xlsx":
-        df = pd.read_excel(path, "Mandate", usecols="B:J")
-        df = df.dropna(how="all", ignore_index=True)
-        df.columns = df.iloc[0]
-        df = df[1:].reset_index(drop=True).rename_axis(None, axis=1)
+        df = (
+            pd.read_excel(path, "Mandate", usecols="B:J", header=2)
+            .dropna(how="all")
+            .dropna(axis=1, how="all")
+            .reset_index(drop=True)
+        )
+
+    return df
 
 
 def create_folders(
@@ -69,7 +73,9 @@ def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
 
             last_parent = parent
 
-    return df_filled.fillna("")
+    df_filled = df_filled.fillna("")
+
+    return df_filled
 
 
 # get client context with site url and client credentials
