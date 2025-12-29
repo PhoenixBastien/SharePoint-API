@@ -16,7 +16,6 @@ def read_file(path: Path | str) -> pd.DataFrame:
         df = (
             pd.read_excel(path, "Mandate", header=2, usecols="B:J")
             .dropna(how="all")
-            .dropna(axis=1, how="all")
             .reset_index(drop=True)
         )
 
@@ -49,33 +48,16 @@ def create_folders(
 
 
 def hierarchical_fill(df: pd.DataFrame) -> pd.DataFrame:
-    df_filled = df.copy()
-    levels = df.columns.tolist()
+    """
+    Forward-fills hierarchical columns based on parent-child relationships.
+    """
+    cols = df.columns
+    df[cols[0]] = df[cols[0]].ffill()
 
-    # fill top level unconditionally
-    df_filled[levels[0]] = df_filled[levels[0]].ffill()
+    for parent, child in zip(cols[:-1], cols[1:]):
+        df[child] = df.groupby(parent)[child].ffill()
 
-    # fill each subsequent level conditionally
-    for i in range(1, len(levels)):
-        parent_col, current_col = levels[i - 1], levels[i]
-        last_value, last_parent = None, None
-
-        for idx, row in df_filled.iterrows():
-            parent, current = row[parent_col], row[current_col]
-
-            if parent != last_parent:
-                last_value = None
-
-            if pd.notna(current):
-                last_value = current
-            elif parent == last_parent and last_value is not None:
-                df_filled.at[idx, current_col] = last_value
-
-            last_parent = parent
-
-    df_filled = df_filled.fillna("")
-
-    return df_filled
+    return df.fillna("")
 
 
 # get client context with site url and client credentials
